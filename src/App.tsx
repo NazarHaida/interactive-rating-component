@@ -10,8 +10,10 @@ function App() {
             {!isRated ? <section>
                     <div className="card">
                         <div className="star-wrapper">
-                            <img className="star" src="/images/icon-star.svg" alt="star"></img>
-                        </div>
+                            <img
+                                src={`${import.meta.env.BASE_URL}images/icon-star.svg`}
+                                alt="star"
+                            />                        </div>
                         <header className="card-header">
                             <h1 className="card-title">How did we do?</h1>
                             <p className="card-text">Please let us know how we did with your support request. All feedback
@@ -37,8 +39,10 @@ function App() {
                 <section>
                     <div className="card thank-you-card">
                         <div className="card-img-wrapper">
-                            <img src="/images/illustration-thank-you.svg" alt="thank-you-illustration"
-                                 className="card-img"/>
+                            <img
+                                src={`${import.meta.env.BASE_URL}images/illustration-thank-you.svg`}
+                                alt="thank you"
+                            />
                         </div>
                         <div className="card-selected-chip">
                             You selected: {selectedRating} out of 5

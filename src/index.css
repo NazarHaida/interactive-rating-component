@@ -1,0 +1,138 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-850: hsl(213, 19%, 22%);;
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--grey-950);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+          180deg,
+          var(--grey-900),
+          hsl(216, 18%, 13%)
+  );
+}
+
+.star-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--grey-850);
+}
+
+.card-title {
+  color: var(--white);
+  padding-top: 2rem;
+}
+
+.card-text {
+  color: var(--grey-500);
+  padding: 1rem 0;
+}
+
+.card-ratings{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card-rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--grey-850);
+  border-radius: 50%;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+.card-rating:hover{
+  background-color: var(--orange);
+  color: black;
+}
+
+.card-rating-selected {
+  background-color: var(--white);
+  color: black;
+}
+
+.card-submit-button {
+  background-color: var(--orange);
+
+  margin-top: 1rem;
+  border-radius: 24px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.card-submit-button:hover {
+  background-color: var(--white);
+}
+
+.card-img-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.card-selected-chip{
+  background-color: var(--grey-850);
+  color: var(--orange);
+
+  border-radius: 24px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 1rem;
+  width: 60%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.thank-you-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title{
+  color: var(--white);
+}
+
+.card-subtitle{
+  color: var(--grey-500);
+  text-align: center;
+}
